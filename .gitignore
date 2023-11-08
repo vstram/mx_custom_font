@@ -16,3 +16,5 @@
 /nativemobile/builds/
 *.bak
 *.lock
+/customfont.mpr.bak
+/customfont.mpr.lock
