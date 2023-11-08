@@ -18,3 +18,4 @@
 *.lock
 /customfont.mpr.bak
 /customfont.mpr.lock
+/vendorlib/temp/
