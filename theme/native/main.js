@@ -19,6 +19,27 @@ export const sacramentoFontFamily = {
     regular: "Sacramento-Regular",
 };
 
+export const latoFontFamily = {
+    bold: "Lato-Bold",
+    boldItalic: "Lato-BoldItalic",
+    italic: "Lato-Italic",
+    regular: "Lato-Regular",
+};
+
+export const textLatoNormal = {
+    text: {
+        fontFamily: latoFontFamily.regular,
+        fontWeight: 'normal',
+    },
+};
+
+export const textLatoBold = {
+    text: {
+        fontFamily: latoFontFamily.bold,
+        fontWeight: 'bold',
+    },
+};
+
 export const textUbuntuNormal = {
     text: {
         fontFamily: ubuntuFontFamily.regular,
