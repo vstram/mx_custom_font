@@ -15,18 +15,14 @@ import mendixsso.implementation.ConfigurationManager;
 
 public class LoadStringValueFromEnvOrDefault extends CustomJavaAction<java.lang.String>
 {
-	private final java.lang.String envVarName;
-	private final java.lang.String defaultValue;
+	private java.lang.String envVarName;
+	private java.lang.String defaultValue;
 
-	public LoadStringValueFromEnvOrDefault(
-		IContext context,
-		java.lang.String _envVarName,
-		java.lang.String _defaultValue
-	)
+	public LoadStringValueFromEnvOrDefault(IContext context, java.lang.String envVarName, java.lang.String defaultValue)
 	{
 		super(context);
-		this.envVarName = _envVarName;
-		this.defaultValue = _defaultValue;
+		this.envVarName = envVarName;
+		this.defaultValue = defaultValue;
 	}
 
 	@java.lang.Override

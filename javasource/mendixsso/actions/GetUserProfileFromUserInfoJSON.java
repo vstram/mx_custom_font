@@ -17,15 +17,12 @@ import mendixsso.proxies.UserProfile;
 
 public class GetUserProfileFromUserInfoJSON extends CustomJavaAction<IMendixObject>
 {
-	private final java.lang.String userInfoJSON;
+	private java.lang.String userInfoJSON;
 
-	public GetUserProfileFromUserInfoJSON(
-		IContext context,
-		java.lang.String _userInfoJSON
-	)
+	public GetUserProfileFromUserInfoJSON(IContext context, java.lang.String userInfoJSON)
 	{
 		super(context);
-		this.userInfoJSON = _userInfoJSON;
+		this.userInfoJSON = userInfoJSON;
 	}
 
 	@java.lang.Override

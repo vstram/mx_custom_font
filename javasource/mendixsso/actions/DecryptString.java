@@ -22,21 +22,16 @@ import java.util.Base64;
 
 public class DecryptString extends CustomJavaAction<java.lang.String>
 {
-	private final java.lang.String value;
-	private final java.lang.String key;
-	private final java.lang.String prefix;
+	private java.lang.String value;
+	private java.lang.String key;
+	private java.lang.String prefix;
 
-	public DecryptString(
-		IContext context,
-		java.lang.String _value,
-		java.lang.String _key,
-		java.lang.String _prefix
-	)
+	public DecryptString(IContext context, java.lang.String value, java.lang.String key, java.lang.String prefix)
 	{
 		super(context);
-		this.value = _value;
-		this.key = _key;
-		this.prefix = _prefix;
+		this.value = value;
+		this.key = key;
+		this.prefix = prefix;
 	}
 
 	@java.lang.Override

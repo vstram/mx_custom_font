@@ -18,15 +18,12 @@ import mendixsso.implementation.utils.OpenIDUtils;
  */
 public class GenerateRandomPassword extends CustomJavaAction<java.lang.String>
 {
-	private final java.lang.Long length;
+	private java.lang.Long length;
 
-	public GenerateRandomPassword(
-		IContext context,
-		java.lang.Long _length
-	)
+	public GenerateRandomPassword(IContext context, java.lang.Long length)
 	{
 		super(context);
-		this.length = _length;
+		this.length = length;
 	}
 
 	@java.lang.Override

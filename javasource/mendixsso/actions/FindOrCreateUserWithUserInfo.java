@@ -23,15 +23,12 @@ import mendixsso.proxies.constants.Constants;
 
 public class FindOrCreateUserWithUserInfo extends CustomJavaAction<IMendixObject>
 {
-	private final java.lang.String UserInfoJSON;
+	private java.lang.String UserInfoJSON;
 
-	public FindOrCreateUserWithUserInfo(
-		IContext context,
-		java.lang.String _userInfoJSON
-	)
+	public FindOrCreateUserWithUserInfo(IContext context, java.lang.String UserInfoJSON)
 	{
 		super(context);
-		this.UserInfoJSON = _userInfoJSON;
+		this.UserInfoJSON = UserInfoJSON;
 	}
 
 	@java.lang.Override

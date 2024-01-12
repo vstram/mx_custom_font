@@ -20,15 +20,12 @@ import java.time.Instant;
 
 public class DeleteExpiredAuthRequests extends CustomJavaAction<java.lang.Boolean>
 {
-	private final java.lang.Boolean removeAll;
+	private java.lang.Boolean removeAll;
 
-	public DeleteExpiredAuthRequests(
-		IContext context,
-		java.lang.Boolean _removeAll
-	)
+	public DeleteExpiredAuthRequests(IContext context, java.lang.Boolean removeAll)
 	{
 		super(context);
-		this.removeAll = _removeAll;
+		this.removeAll = removeAll;
 	}
 
 	@java.lang.Override

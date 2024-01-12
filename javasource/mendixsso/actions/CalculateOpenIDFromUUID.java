@@ -16,15 +16,12 @@ import org.apache.commons.lang3.StringUtils;
 
 public class CalculateOpenIDFromUUID extends CustomJavaAction<java.lang.String>
 {
-	private final java.lang.String uuid;
+	private java.lang.String uuid;
 
-	public CalculateOpenIDFromUUID(
-		IContext context,
-		java.lang.String _uuid
-	)
+	public CalculateOpenIDFromUUID(IContext context, java.lang.String uuid)
 	{
 		super(context);
-		this.uuid = _uuid;
+		this.uuid = uuid;
 	}
 
 	@java.lang.Override
